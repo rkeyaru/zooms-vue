@@ -12,10 +12,10 @@ import RouterLink from '../router';
         <img src="../components/icons/peng.gif" class="peng">
       </div >
       <div class="login">
-          <h5>Sign in to Peng-wing's</h5>
+          <h5>Sign in to Animania</h5>
     </div>
-<div class="login ">
-<div class=" col-lg-2 bg-light rcorners2  p-4">
+<div class="login">
+<div class=" col-lg-2 bg-light rcorners2  p-4 w-25">
     <div><h3 class="" style="color: #ff6726">Login</h3></div>
     <div class="">
         <div class="form-group">
@@ -41,7 +41,7 @@ import RouterLink from '../router';
 
 </div>
 <div class="login">
-<div class="col-lg-2 mt-2 rcorners2 cen">New to Peng-wing's? <RouterLink to="/signup" class="blue-hyperlink" >Create an account</RouterLink></div>
+<div class="col-lg-2 mt-2 rcorners2 cen w-25">New to Animania? <RouterLink to="/signup" class="blue-hyperlink" >Create an account</RouterLink></div>
 </div>
 </template>
 <style>

@@ -4,6 +4,7 @@ import DashboardView from '../views/DashboardView.vue'
 import Login from '../views/Login.vue'
 import Forgot from '../views/Forgot.vue'
 import Register from '../views/Register.vue'
+import WatchVideo from "../views/WatchVideo.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -39,7 +40,12 @@ const router = createRouter({
       path:'/signup',
       name:'signup',
       component: Register,
-    }
+    },
+    {
+      path: '/watch/video/:video',
+      name: 'WatchVideo',
+      component: WatchVideo
+    },
   ]
 })
 

@@ -21,7 +21,7 @@ methods:{
 edituser(){
   
         axios
-        .post('http://localhost:8080/zoosite/myresource/edituserdata',this.values)
+        .post('http://localhost:8080/animania/myresource/user/update',this.values)
     return alert("Success!")    
     }
     
@@ -29,7 +29,7 @@ edituser(){
 },
 mounted()
 {
-    // axios.get('http://localhost:8080/zoosite/myresource/zoodata')
+    // axios.get('http://localhost:8080/animania/myresource/zoodata')
     //             .then(response=>(this.ZooData=response.data))  
 }
 }

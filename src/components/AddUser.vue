@@ -16,7 +16,7 @@ data(){
 methods:{
 adduser(){    
         axios
-        .post('http://localhost:8080/zoosite/myresource/adduserdata',this.form)
+        .post('http://localhost:8080/animania/myresource/user/create',this.form)
         }
 }
 }

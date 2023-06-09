@@ -15,7 +15,7 @@ data(){
 methods:{
 addzoo(){    
         axios
-        .post('http://localhost:8080/zoosite/myresource/addzoodata',this.form)
+        .post('http://localhost:8080/animania/myresource/addzoodata',this.form)
         }
 }
 }

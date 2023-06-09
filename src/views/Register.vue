@@ -23,7 +23,7 @@ data(){
 methods:{
 adduser(){    
         axios
-        .post('http://localhost:8080/zoosite/myresource/adduserdata',this.form)
+        .post('http://localhost:8080/animania/myresource/adduserdata',this.form)
         }
 }
 }
@@ -33,10 +33,10 @@ adduser(){
         <img src="../components/icons/peng.gif" class="peng">
       </div >
       <div class="login">
-          <h5>Sign Up to Peng-wing's</h5>
+          <h5>Sign Up to Animania</h5>
     </div>
 <div class="login ">
-<div class=" col-lg-2 bg-light rcorners2  p-4">
+<div class=" col-lg-2 bg-light rcorners2  p-4 w-25">
     <div><h3 class="" style="color: #ff6726">Register</h3></div>
     <div class="">
         <div class="form-group">
@@ -113,7 +113,7 @@ adduser(){
 </div>
 
 <div class="login">
-<div class="col-lg-2 mt-2 rcorners2 cen">Already have an account? <RouterLink to="/login" class="blue-hyperlink" >Sign In</RouterLink></div>
+<div class="col-lg-2 mt-2 rcorners2 cen w-25">Already have an account? <RouterLink to="/login" class="blue-hyperlink" >Sign In</RouterLink></div>
 </div>
 </template>
 <style>

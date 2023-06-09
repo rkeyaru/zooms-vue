@@ -1,105 +1,112 @@
 <script >
-import ViewZoo from './ViewZoo.vue';
+import ViewVideo from './ViewVideo.vue';
 import ViewUser from './ViewUser.vue';
 
-export default{
+export default {
 
- components:{
-    ViewZoo,ViewUser,
- },
-    data()
-    {
+    components: {
+        ViewVideo, ViewUser,
+    },
+    data() {
         return {
-            display:'',
-            user:'',
+            display: '',
+            user: '',
 
         }
     },
 
-    
-    }
+
+}
 </script>
 
 <template>
-    <div >
-        <div  >
+    <div>
+        <div>
             <h1 class="heading">Dashboard</h1>
-        </div >
+        </div>
         <div>
             <div class="row">
                 <div class="col-lg-3 col-md-3  col-6 p-5 m-3 bg  border">
-              <button id="viewuser_table" class="btn1 cen " @click="user=!user">Users</button>
+                    <button id="viewuser_table" class="btn1 cen " @click="user = !user , display = false">Users</button>
 
                 </div>
                 <div class="col-lg-3 col-md-3  col-6 p-5 m-3 bg  border">
-                      <button id="viewanimals_table" class="btn1 cen" >Animals</button>
+                    <button id="viewanimals_table" class="btn1 cen">Genre</button>
 
                 </div>
                 <div class="col-lg-3 col-md-3  col-6 p-5 m-3 bg border">
-                   <button id="viewzoo_table" class="btn1 cen" @click="display=!display"> Zoo</button>
-                
+                    <button id="viewzoo_table" class="btn1 cen" @click="display = !display,user= false"> Anime</button>
+
                 </div>
             </div>
-        </div >        
+        </div>
     </div>
-   
+
     <div class="row">
         <div v-if="display">
-            <ViewZoo />
+            <ViewVideo />
         </div>
         <div v-if="user">
             <ViewUser />
         </div>
     </div>
+
 </template>
 
 <style scoped>
-.heading{
-    color: #ff6726; 
+.heading {
+    color: #ff6726;
     display: flex;
-     justify-content: center;
-     margin-top: 1.5rem;
-     margin-left: -1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-left: -1rem;
 }
-.row{
+
+.row {
     justify-content: space-around;
 }
-.cen
-{   display: flex;
+
+.cen {
+    display: flex;
     justify-content: space-around;
 }
-.bg
-{   background-color: rgb(38, 38, 38);
+
+.bg {
+    background-color: rgb(38, 38, 38);
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    
+
 }
-.bg:hover{
+
+.bg:hover {
     background-color: hsl(0, 0%, 33%);
     transition: 0.4s;
 }
-.btn1{
+
+.btn1 {
 
     color: whitesmoke;
     background-color: #212627;
     border-radius: 10px;
     border-color: #ff6726;
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: #ff6726;
     color: whitesmoke;
     transition: 0.3s;
 }
-.btns1{
-    
+
+.btns1 {
+
     color: whitesmoke;
     background-color: #212627;
     border-radius: 10px;
     border-color: #ff6726;
 }
-.btns1:hover{
+
+.btns1:hover {
     background-color: #ff6726;
     color: whitesmoke;
-}
-</style>
+}</style>

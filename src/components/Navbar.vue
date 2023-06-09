@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
 <template>
 <div class="bg-light text-dark d-flex justify-content-center"> <img src="../components/icons/peng.gif" class="peng">
           
-          <span class="zoosite">Peng-wing's Zoo</span></div>
+          <span class="zoosite">Animania</span></div>
        <nav id="nav-top" class=" bg-dark text-light d-flex justify-content-center">
        
         

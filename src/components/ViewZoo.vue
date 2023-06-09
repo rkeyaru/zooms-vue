@@ -30,12 +30,12 @@ export default{
 
 
     mounted(){
-                axios.get('http://localhost:8080/zoosite/myresource/zoodata')
+                axios.get('http://localhost:8080/animania/myresource/zoodata')
                 .then(response=>(this.ZooData=response.data))  
             },
     methods:{
         deletezoo(zoo){
-            axios.post('http://localhost:8080/zoosite/myresource/deletezoodata',zoo)
+            axios.post('http://localhost:8080/animania/myresource/deletezoodata',zoo)
             return alert("Deleted")
             
         }

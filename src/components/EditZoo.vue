@@ -20,7 +20,7 @@ methods:{
 editzoo(){
   
         axios
-        .post('http://localhost:8080/zoosite/myresource/addzoodata',this.values)
+        .post('http://localhost:8080/animania/myresource/addzoodata',this.values)
     return alert("Success!")    
     }
     
@@ -28,7 +28,7 @@ editzoo(){
 },
 mounted()
 {
-    // axios.get('http://localhost:8080/zoosite/myresource/zoodata')
+    // axios.get('http://localhost:8080/animania/myresource/zoodata')
     //             .then(response=>(this.ZooData=response.data))  
 }
 }
